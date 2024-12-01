@@ -9,14 +9,21 @@
         android:id="@+id/inputVoltage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Введіть напругу мережі (кВ)"
+        android:hint="Введіть напругу (кВ)"
         android:inputType="numberDecimal" />
 
     <EditText
-        android:id="@+id/inputPowerSC"
+        android:id="@+id/inputImpedanceR"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Введіть потужність КЗ на стороні 35 кВ (МВА)"
+        android:hint="Введіть активний опір R (Ом)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/inputImpedanceX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть реактивний опір X (Ом)"
         android:inputType="numberDecimal" />
 
     <Button

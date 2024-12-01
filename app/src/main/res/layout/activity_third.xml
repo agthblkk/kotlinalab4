@@ -1,0 +1,41 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/inputVoltage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть напругу мережі (кВ)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/inputPowerSC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть потужність КЗ на стороні 35 кВ (МВА)"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Розрахувати" />
+
+    <TextView
+        android:id="@+id/outputResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Результат буде показано тут" />
+
+    <Button
+        android:id="@+id/backToFirstActivityButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="До розрахунку 7.1" />
+</LinearLayout>

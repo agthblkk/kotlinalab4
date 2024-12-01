@@ -1,0 +1,51 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/inputPowerSC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введіть потужність КЗ (МВА)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputVoltage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введіть напругу (кВ)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Розрахувати"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/outputResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Результат буде показано тут"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:background="#EFEFEF"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp" />
+        <Button
+            android:id="@+id/navigateToExample7_1Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="До розрахунку прикладу 7.1" />
+    </LinearLayout>
+</ScrollView>

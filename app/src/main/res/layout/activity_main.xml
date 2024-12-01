@@ -1,0 +1,87 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Поля для вводу -->
+        <EditText
+            android:id="@+id/inputVoltage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введіть напругу (кВ)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/inputShortCircuitCurrent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введіть струм КЗ (кА)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/inputTransformerPower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введіть потужність ТП (кВА)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/inputLoadPower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введіть розрахункове навантаження (кВА)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/inputOperatingTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введіть розрахунковий час роботи (год)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/inputFaultTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введіть час КЗ (с)"
+            android:inputType="numberDecimal" />
+
+        <!-- Кнопка для розрахунку -->
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Розрахувати"
+            android:layout_marginTop="16dp" />
+
+        <!-- Результати -->
+        <TextView
+            android:id="@+id/outputResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Результат буде показано тут"
+            android:paddingTop="16dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:background="#EFEFEF"
+            android:padding="10dp" />
+        <Button
+            android:id="@+id/buttonToSecondActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="До розрахунку 7.2"
+            android:layout_marginTop="16dp" />
+        <Button
+            android:id="@+id/buttonToThirdActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="До калькулятору 7.3"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
